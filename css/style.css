@@ -749,3 +749,20 @@ body, html {
         height: 260px !important; /* MAU NAIKIN / TURUNIN? bilang */
     }
 }
+/* Default PC */
+.play-container iframe {
+    width: 100%;
+    max-width: 1056px;
+    height: 594px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 10px;
+}
+
+/* HP */
+@media (max-width: 768px) {
+    .play-container iframe {
+        height: 250px; /* mau aku naikin? 270? 300? */
+    }
+}
