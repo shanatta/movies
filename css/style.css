@@ -711,28 +711,23 @@ iframe {
 body, html {
     overflow-x: hidden !important;
 }
-/* FIX VIDEO BIAR GA MELEBAR DI HP */
 .responsive-iframe {
     position: relative;
     width: 100%;
-    max-width: 900px; /* biar di PC tetap bagus */
-    margin: 20px auto;
-    padding-bottom: 56.25%; /* rasio 16:9 */
-    height: 0;
-    overflow: hidden;
-    border-radius: 12px;
+    max-width: 1056px; /* PC tetap tinggi normal */
+    margin: auto;
 }
 
+/* Tinggi video normal di PC */
 .responsive-iframe iframe {
-    position: absolute;
-    top: 0; 
-    left: 0;
     width: 100%;
-    height: 100%;
-    border: 0;
+    height: 595px; /* sama seperti yg asli */
+    border: none;
 }
 
-/* Biar halaman gak bisa digeser kanan */
-html, body {
-    overflow-x: hidden;
+/* HP: bikin lebih tinggi dikit */
+@media (max-width: 768px) {
+    .responsive-iframe iframe {
+        height: 240px; /* naikin kalau masih kurang */
+    }
 }
