@@ -683,3 +683,9 @@ header {
         grid-template-columns: 1fr;
     }
 } 
+/* ====== HP: Hilangin foto user ====== */
+@media (max-width: 768px) {
+    .user-img {
+        display: none !important;
+    }
+}
