@@ -683,9 +683,18 @@ header {
         grid-template-columns: 1fr;
     }
 } 
-/* ====== HP: Hilangin foto user ====== */
+/* ==== HP ONLY FIX NAVBAR TANPA USER IMG ==== */
 @media (max-width: 768px) {
+
+    /* sembunyikan user image */
     .user-img {
         display: none !important;
+    }
+
+    /* jaga posisi navbar biar gak melebar */
+    .user {
+        width: 40px;   /* kasih ruang kosong pengganti img */
+        height: 40px;
+        display: inline-block;
     }
 }
