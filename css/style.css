@@ -731,3 +731,21 @@ body, html {
         height: 240px; /* naikin kalau masih kurang */
     }
 }
+/* ==== FIX IFRAME TANPA UBAH HTML ==== */
+
+/* PC – tetep normal */
+.play-container iframe {
+    width: 100% !important;
+    max-width: 1056px !important;
+    height: 595px !important;
+    display: block !important;
+    margin: 0 auto !important;
+    border: none !important;
+}
+
+/* HP – Naikin tinggi dikit biar ga kekecilan */
+@media (max-width: 768px) {
+    .play-container iframe {
+        height: 260px !important; /* MAU NAIKIN / TURUNIN? bilang */
+    }
+}
